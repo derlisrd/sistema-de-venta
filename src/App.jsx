@@ -1,9 +1,12 @@
 import Pages from "./Pages";
 import Layout from './Layout'
+import { BrowserRouter } from "react-router-dom";
 function App() {
   return (
     <Layout>
-      <Pages />
+      <BrowserRouter>
+        <Pages />
+      </BrowserRouter>
     </Layout>
   );
 }
